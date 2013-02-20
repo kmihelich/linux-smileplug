@@ -1,0 +1,570 @@
+kernel/fs/nfs_common/nfs_acl.ko: kernel/net/sunrpc/sunrpc.ko
+kernel/fs/quota/quota_v1.ko:
+kernel/fs/quota/quota_v2.ko: kernel/fs/quota/quota_tree.ko
+kernel/fs/quota/quota_tree.ko:
+kernel/fs/fat/msdos.ko:
+kernel/fs/binfmt_aout.ko:
+kernel/fs/binfmt_misc.ko:
+kernel/fs/configfs/configfs.ko:
+kernel/fs/dlm/dlm.ko: kernel/fs/configfs/configfs.ko
+kernel/fs/isofs/isofs.ko:
+kernel/fs/nfs/nfs.ko: kernel/fs/lockd/lockd.ko kernel/fs/nfs_common/nfs_acl.ko kernel/net/sunrpc/auth_gss/auth_rpcgss.ko kernel/net/sunrpc/sunrpc.ko
+kernel/fs/exportfs/exportfs.ko:
+kernel/fs/nfsd/nfsd.ko: kernel/fs/lockd/lockd.ko kernel/fs/nfs_common/nfs_acl.ko kernel/net/sunrpc/auth_gss/auth_rpcgss.ko kernel/net/sunrpc/sunrpc.ko kernel/fs/exportfs/exportfs.ko
+kernel/fs/lockd/lockd.ko: kernel/net/sunrpc/sunrpc.ko
+kernel/fs/cifs/cifs.ko:
+kernel/fs/fuse/fuse.ko:
+kernel/fs/fuse/cuse.ko: kernel/fs/fuse/fuse.ko
+kernel/fs/udf/udf.ko: kernel/lib/crc-itu-t.ko
+kernel/crypto/pcbc.ko:
+kernel/crypto/michael_mic.ko:
+kernel/crypto/xor.ko:
+kernel/crypto/async_tx/async_tx.ko:
+kernel/crypto/async_tx/async_memcpy.ko: kernel/crypto/async_tx/async_tx.ko
+kernel/crypto/async_tx/async_xor.ko: kernel/crypto/async_tx/async_tx.ko kernel/crypto/xor.ko
+kernel/crypto/async_tx/async_pq.ko: kernel/drivers/md/raid6_pq.ko kernel/crypto/async_tx/async_xor.ko kernel/crypto/async_tx/async_tx.ko kernel/crypto/xor.ko
+kernel/crypto/async_tx/async_raid6_recov.ko: kernel/crypto/async_tx/async_pq.ko kernel/drivers/md/raid6_pq.ko kernel/crypto/async_tx/async_xor.ko kernel/crypto/xor.ko kernel/crypto/async_tx/async_memcpy.ko kernel/crypto/async_tx/async_tx.ko
+kernel/drivers/video/sysfillrect.ko:
+kernel/drivers/video/syscopyarea.ko:
+kernel/drivers/video/sysimgblt.ko:
+kernel/drivers/video/fb_sys_fops.ko:
+kernel/drivers/char/nozomi.ko:
+kernel/drivers/block/brd.ko:
+kernel/drivers/block/loop.ko:
+kernel/drivers/misc/eeprom/eeprom_93cx6.ko:
+kernel/drivers/misc/iwmc3200top/iwmc3200top.ko:
+kernel/drivers/scsi/scsi_transport_iscsi.ko:
+kernel/drivers/scsi/libiscsi.ko: kernel/drivers/scsi/scsi_transport_iscsi.ko
+kernel/drivers/scsi/libiscsi_tcp.ko: kernel/drivers/scsi/libiscsi.ko kernel/drivers/scsi/scsi_transport_iscsi.ko
+kernel/drivers/scsi/iscsi_tcp.ko: kernel/drivers/scsi/libiscsi_tcp.ko kernel/drivers/scsi/libiscsi.ko kernel/drivers/scsi/scsi_transport_iscsi.ko
+kernel/drivers/scsi/thor/mv61xx.ko:
+kernel/drivers/scsi/sr_mod.ko: kernel/drivers/cdrom/cdrom.ko
+kernel/drivers/scsi/sg.ko:
+kernel/drivers/scsi/scsi_wait_scan.ko:
+kernel/drivers/net/usb/catc.ko:
+kernel/drivers/net/usb/kaweth.ko:
+kernel/drivers/net/usb/pegasus.ko:
+kernel/drivers/net/usb/rtl8150.ko:
+kernel/drivers/net/usb/hso.ko: kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/usb/asix.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/cdc_ether.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/cdc_eem.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/dm9601.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/smsc75xx.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/smsc95xx.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/gl620a.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/net1080.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/plusb.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/rndis_host.ko: kernel/drivers/net/usb/cdc_ether.ko kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/cdc_subset.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/zaurus.ko: kernel/drivers/net/usb/cdc_ether.ko kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/mcs7830.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/usbnet.ko:
+kernel/drivers/net/usb/int51x1.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/ipheth.ko:
+kernel/drivers/net/usb/sierra_net.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/wireless/atmel.ko:
+kernel/drivers/net/wireless/atmel_pci.ko: kernel/drivers/net/wireless/atmel.ko
+kernel/drivers/net/wireless/at76c50x-usb.ko: kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/hostap/hostap.ko: kernel/net/wireless/lib80211.ko
+kernel/drivers/net/wireless/hostap/hostap_plx.ko: kernel/drivers/net/wireless/hostap/hostap.ko kernel/net/wireless/lib80211.ko
+kernel/drivers/net/wireless/hostap/hostap_pci.ko: kernel/drivers/net/wireless/hostap/hostap.ko kernel/net/wireless/lib80211.ko
+kernel/drivers/net/wireless/zd1211rw/zd1211rw.ko: kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/rtl818x/rtl8180.ko: kernel/net/mac80211/mac80211.ko kernel/drivers/misc/eeprom/eeprom_93cx6.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/rtl818x/rtl8187.ko: kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko kernel/drivers/misc/eeprom/eeprom_93cx6.ko
+kernel/drivers/net/wireless/rndis_wlan.ko: kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko kernel/drivers/net/usb/rndis_host.ko kernel/drivers/net/usb/cdc_ether.ko kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/wireless/libertas/libertas.ko: kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko kernel/net/wireless/lib80211.ko
+kernel/drivers/net/wireless/libertas/usb8xxx.ko: kernel/drivers/net/wireless/libertas/libertas.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko kernel/net/wireless/lib80211.ko
+kernel/drivers/net/wireless/libertas/libertas_sdio.ko: kernel/drivers/net/wireless/libertas/libertas.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko kernel/net/wireless/lib80211.ko
+kernel/drivers/net/wireless/libertas/libertas_spi.ko: kernel/drivers/net/wireless/libertas/libertas.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko kernel/net/wireless/lib80211.ko
+kernel/drivers/net/wireless/libertas_tf/libertas_tf.ko: kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/libertas_tf/libertas_tf_usb.ko: kernel/drivers/net/wireless/libertas_tf/libertas_tf.ko kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/adm8211.ko: kernel/net/mac80211/mac80211.ko kernel/drivers/misc/eeprom/eeprom_93cx6.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/mwl8k.ko: kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/iwlwifi/iwlcore.ko: kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/iwlwifi/iwlagn.ko: kernel/drivers/net/wireless/iwlwifi/iwlcore.ko kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/iwlwifi/iwl3945.ko: kernel/drivers/net/wireless/iwlwifi/iwlcore.ko kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko: kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/rt2x00/rt2x00usb.ko: kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/rt2x00/rt2800lib.ko: kernel/drivers/net/wireless/rt2x00/rt2x00usb.ko kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/rt2x00/rt2500usb.ko: kernel/drivers/net/wireless/rt2x00/rt2x00usb.ko kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/rt2x00/rt73usb.ko: kernel/lib/crc-itu-t.ko kernel/drivers/net/wireless/rt2x00/rt2x00usb.ko kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/rt2x00/rt2800usb.ko: kernel/drivers/net/wireless/rt2x00/rt2800lib.ko kernel/drivers/net/wireless/rt2x00/rt2x00usb.ko kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/ath/ath5k/ath5k.ko: kernel/net/mac80211/mac80211.ko kernel/drivers/net/wireless/ath/ath.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/ath/ath9k/ath9k.ko: kernel/drivers/net/wireless/ath/ath9k/ath9k_common.ko kernel/drivers/net/wireless/ath/ath9k/ath9k_hw.ko kernel/drivers/net/wireless/ath/ath.ko kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/ath/ath9k/ath9k_hw.ko: kernel/drivers/net/wireless/ath/ath.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/ath/ath9k/ath9k_common.ko: kernel/drivers/net/wireless/ath/ath9k/ath9k_hw.ko kernel/drivers/net/wireless/ath/ath.ko kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/ath/ath9k/ath9k_htc.ko: kernel/drivers/net/wireless/ath/ath9k/ath9k_common.ko kernel/drivers/net/wireless/ath/ath9k/ath9k_hw.ko kernel/net/mac80211/mac80211.ko kernel/drivers/net/wireless/ath/ath.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/ath/ar9170/ar9170usb.ko: kernel/net/mac80211/mac80211.ko kernel/drivers/net/wireless/ath/ath.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/ath/ath.ko: kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/wireless/iwmc3200wifi/iwmc3200wifi.ko: kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/net/ppp_generic.ko: kernel/drivers/net/slhc.ko
+kernel/drivers/net/ppp_async.ko: kernel/drivers/net/ppp_generic.ko kernel/drivers/net/slhc.ko
+kernel/drivers/net/ppp_synctty.ko: kernel/drivers/net/ppp_generic.ko kernel/drivers/net/slhc.ko
+kernel/drivers/net/ppp_deflate.ko: kernel/drivers/net/ppp_generic.ko kernel/drivers/net/slhc.ko
+kernel/drivers/net/bsd_comp.ko: kernel/drivers/net/ppp_generic.ko kernel/drivers/net/slhc.ko
+kernel/drivers/net/ppp_mppe.ko: kernel/drivers/net/ppp_generic.ko kernel/drivers/net/slhc.ko
+kernel/drivers/net/pppox.ko: kernel/drivers/net/ppp_generic.ko kernel/drivers/net/slhc.ko
+kernel/drivers/net/pppoe.ko: kernel/drivers/net/pppox.ko kernel/drivers/net/ppp_generic.ko kernel/drivers/net/slhc.ko
+kernel/drivers/net/slhc.ko:
+kernel/drivers/net/dummy.ko:
+kernel/drivers/net/tun.ko:
+kernel/drivers/cdrom/cdrom.ko:
+kernel/drivers/usb/storage/ums-alauda.ko:
+kernel/drivers/usb/storage/ums-cypress.ko:
+kernel/drivers/usb/storage/ums-isd200.ko:
+kernel/drivers/usb/storage/ums-karma.ko:
+kernel/drivers/usb/storage/ums-onetouch.ko:
+kernel/drivers/usb/storage/ums-usbat.ko:
+kernel/drivers/usb/serial/aircable.ko:
+kernel/drivers/usb/serial/ark3116.ko:
+kernel/drivers/usb/serial/belkin_sa.ko:
+kernel/drivers/usb/serial/ch341.ko:
+kernel/drivers/usb/serial/cyberjack.ko:
+kernel/drivers/usb/serial/cypress_m8.ko:
+kernel/drivers/usb/serial/digi_acceleport.ko:
+kernel/drivers/usb/serial/io_edgeport.ko:
+kernel/drivers/usb/serial/io_ti.ko:
+kernel/drivers/usb/serial/empeg.ko:
+kernel/drivers/usb/serial/garmin_gps.ko:
+kernel/drivers/usb/serial/hp4x.ko:
+kernel/drivers/usb/serial/ipw.ko:
+kernel/drivers/usb/serial/ir-usb.ko:
+kernel/drivers/usb/serial/iuu_phoenix.ko:
+kernel/drivers/usb/serial/kobil_sct.ko:
+kernel/drivers/usb/serial/mct_u232.ko:
+kernel/drivers/usb/serial/mos7720.ko:
+kernel/drivers/usb/serial/mos7840.ko:
+kernel/drivers/usb/serial/moto_modem.ko:
+kernel/drivers/usb/serial/navman.ko:
+kernel/drivers/usb/serial/option.ko: kernel/drivers/usb/serial/usb_wwan.ko
+kernel/drivers/usb/serial/oti6858.ko:
+kernel/drivers/usb/serial/qcaux.ko:
+kernel/drivers/usb/serial/qcserial.ko: kernel/drivers/usb/serial/usb_wwan.ko
+kernel/drivers/usb/serial/safe_serial.ko:
+kernel/drivers/usb/serial/siemens_mpi.ko:
+kernel/drivers/usb/serial/sierra.ko:
+kernel/drivers/usb/serial/spcp8x5.ko:
+kernel/drivers/usb/serial/symbolserial.ko:
+kernel/drivers/usb/serial/usb_wwan.ko:
+kernel/drivers/usb/serial/ti_usb_3410_5052.ko:
+kernel/drivers/usb/serial/whiteheat.ko:
+kernel/drivers/usb/serial/keyspan_pda.ko:
+kernel/drivers/usb/serial/vivopay-serial.ko:
+kernel/drivers/usb/serial/zio.ko:
+kernel/drivers/usb/misc/usbtest.ko:
+kernel/drivers/media/common/tuners/tuner-xc2028.ko:
+kernel/drivers/media/common/tuners/tuner-simple.ko: kernel/drivers/media/common/tuners/tuner-types.ko
+kernel/drivers/media/common/tuners/tuner-types.ko:
+kernel/drivers/media/common/tuners/mt20xx.ko:
+kernel/drivers/media/common/tuners/tda8290.ko:
+kernel/drivers/media/common/tuners/tea5767.ko:
+kernel/drivers/media/common/tuners/tea5761.ko:
+kernel/drivers/media/common/tuners/tda9887.ko:
+kernel/drivers/media/common/tuners/tda827x.ko:
+kernel/drivers/media/common/tuners/tda18271.ko:
+kernel/drivers/media/common/tuners/xc5000.ko:
+kernel/drivers/media/common/tuners/mt2060.ko:
+kernel/drivers/media/common/tuners/mt2266.ko:
+kernel/drivers/media/common/tuners/qt1010.ko:
+kernel/drivers/media/common/tuners/mxl5005s.ko:
+kernel/drivers/media/common/tuners/mxl5007t.ko:
+kernel/drivers/media/common/tuners/mc44s803.ko:
+kernel/drivers/media/common/tuners/max2165.ko:
+kernel/drivers/media/IR/keymaps/rc-adstech-dvb-t-pci.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-apac-viewcomp.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-asus-pc39.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-ati-tv-wonder-hd-600.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-avermedia-a16d.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-avermedia.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-avermedia-cardbus.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-avermedia-dvbt.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-avermedia-m135a.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-avermedia-m733a-rm-k6.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-avertv-303.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-behold.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-behold-columbus.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-budget-ci-old.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-cinergy-1400.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-cinergy.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-dm1105-nec.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-dntv-live-dvb-t.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-dntv-live-dvbt-pro.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-empty.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-em-terratec.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-encore-enltv2.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-encore-enltv.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-encore-enltv-fm53.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-evga-indtube.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-eztv.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-flydvb.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-flyvideo.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-fusionhdtv-mce.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-gadmei-rm008z.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-genius-tvgo-a11mce.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-gotview7135.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-hauppauge-new.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-imon-mce.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-imon-pad.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-iodata-bctv7e.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-kaiomy.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-kworld-315u.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-kworld-plus-tv-analog.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-manli.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-msi-tvanywhere.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-msi-tvanywhere-plus.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-nebula.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-nec-terratec-cinergy-xs.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-norwood.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-npgtech.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-pctv-sedna.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-pinnacle-color.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-pinnacle-grey.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-pinnacle-pctv-hd.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-pixelview.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-pixelview-mk12.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-pixelview-new.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-powercolor-real-angel.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-proteus-2309.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-purpletv.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-pv951.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-rc5-hauppauge-new.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-rc5-tv.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-real-audio-220-32-keys.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-tbs-nec.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-terratec-cinergy-xs.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-tevii-nec.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-tt-1500.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-videomate-s350.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-videomate-tv-pvr.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-winfast.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/keymaps/rc-winfast-usbii-deluxe.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/ir-core.ko:
+kernel/drivers/media/IR/ir-common.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/ir-nec-decoder.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/ir-rc5-decoder.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/ir-rc6-decoder.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/ir-jvc-decoder.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/ir-sony-decoder.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/IR/imon.ko: kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/video/videodev.ko: kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/v4l2-int-device.ko:
+kernel/drivers/media/video/v4l2-common.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/v4l1-compat.ko:
+kernel/drivers/media/video/tuner.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/saa7115.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/tvp5150.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/msp3400.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/cs53l32a.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/wm8775.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/cx25840/cx25840.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/tveeprom.ko:
+kernel/drivers/media/video/mt9v011.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/em28xx/em28xx.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko kernel/drivers/media/IR/ir-common.ko kernel/drivers/media/IR/ir-core.ko kernel/drivers/media/video/tveeprom.ko
+kernel/drivers/media/video/em28xx/em28xx-alsa.ko: kernel/drivers/media/video/em28xx/em28xx.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko kernel/drivers/media/IR/ir-common.ko kernel/drivers/media/IR/ir-core.ko kernel/drivers/media/video/tveeprom.ko
+kernel/drivers/media/video/em28xx/em28xx-dvb.ko: kernel/drivers/media/dvb/dvb-core/dvb-core.ko kernel/drivers/media/video/em28xx/em28xx.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko kernel/drivers/media/IR/ir-common.ko kernel/drivers/media/IR/ir-core.ko kernel/drivers/media/video/tveeprom.ko
+kernel/drivers/media/video/tlg2300/poseidon.ko: kernel/drivers/media/dvb/dvb-core/dvb-core.ko kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/cx231xx/cx231xx.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko
+kernel/drivers/media/video/cx231xx/cx231xx-alsa.ko: kernel/drivers/media/video/cx231xx/cx231xx.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko
+kernel/drivers/media/video/cx231xx/cx231xx-dvb.ko: kernel/drivers/media/dvb/dvb-core/dvb-core.ko kernel/drivers/media/video/cx231xx/cx231xx.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko
+kernel/drivers/media/video/usbvision/usbvision.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/pvrusb2/pvrusb2.ko: kernel/drivers/media/dvb/dvb-core/dvb-core.ko kernel/drivers/media/video/cx2341x.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko kernel/drivers/media/video/tveeprom.ko
+kernel/drivers/media/video/ovcamchip/ovcamchip.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/videobuf-core.ko:
+kernel/drivers/media/video/videobuf-vmalloc.ko: kernel/drivers/media/video/videobuf-core.ko
+kernel/drivers/media/video/videobuf-dvb.ko: kernel/drivers/media/dvb/dvb-core/dvb-core.ko kernel/drivers/media/video/videobuf-core.ko
+kernel/drivers/media/video/cx2341x.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/dabusb.ko:
+kernel/drivers/media/video/ov511.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/se401.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/stv680.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/w9968cf.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/zr364xx.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko
+kernel/drivers/media/video/stkwebcam.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/sn9c102/sn9c102.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/et61x251/et61x251.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/pwc/pwc.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/zc0301/zc0301.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/gspca/gspca_main.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/hdpvr/hdpvr.ko: kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/usbvideo/usbvideo.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/usbvideo/ibmcam.ko: kernel/drivers/media/video/usbvideo/usbvideo.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/usbvideo/ultracam.ko: kernel/drivers/media/video/usbvideo/usbvideo.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/usbvideo/konicawc.ko: kernel/drivers/media/video/usbvideo/usbvideo.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/usbvideo/vicam.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/usbvideo/quickcam_messenger.ko: kernel/drivers/media/video/usbvideo/usbvideo.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/s2255drv.ko: kernel/drivers/media/video/videobuf-vmalloc.ko kernel/drivers/media/video/videobuf-core.ko kernel/drivers/media/video/v4l2-common.ko kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/uvc/uvcvideo.ko: kernel/drivers/media/video/videodev.ko kernel/drivers/media/video/v4l1-compat.ko
+kernel/drivers/media/video/ir-kbd-i2c.ko: kernel/drivers/media/IR/ir-common.ko kernel/drivers/media/IR/ir-core.ko
+kernel/drivers/media/dvb/dvb-core/dvb-core.ko:
+kernel/drivers/media/dvb/frontends/dvb-pll.ko:
+kernel/drivers/media/dvb/frontends/stv0299.ko: kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/frontends/stb0899.ko:
+kernel/drivers/media/dvb/frontends/stb6100.ko:
+kernel/drivers/media/dvb/frontends/cx22700.ko:
+kernel/drivers/media/dvb/frontends/tda8083.ko:
+kernel/drivers/media/dvb/frontends/dib3000mb.ko:
+kernel/drivers/media/dvb/frontends/dib3000mc.ko: kernel/drivers/media/dvb/frontends/dibx000_common.ko
+kernel/drivers/media/dvb/frontends/dibx000_common.ko:
+kernel/drivers/media/dvb/frontends/dib7000m.ko: kernel/drivers/media/dvb/frontends/dibx000_common.ko
+kernel/drivers/media/dvb/frontends/dib7000p.ko: kernel/drivers/media/dvb/frontends/dibx000_common.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/frontends/dib8000.ko: kernel/drivers/media/dvb/frontends/dibx000_common.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/frontends/mt312.ko:
+kernel/drivers/media/dvb/frontends/ves1820.ko:
+kernel/drivers/media/dvb/frontends/tda1004x.ko:
+kernel/drivers/media/dvb/frontends/nxt6000.ko:
+kernel/drivers/media/dvb/frontends/mt352.ko:
+kernel/drivers/media/dvb/frontends/zl10039.ko:
+kernel/drivers/media/dvb/frontends/zl10353.ko:
+kernel/drivers/media/dvb/frontends/cx22702.ko:
+kernel/drivers/media/dvb/frontends/tda10023.ko:
+kernel/drivers/media/dvb/frontends/stv0297.ko:
+kernel/drivers/media/dvb/frontends/lgdt330x.ko: kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/frontends/lgdt3305.ko: kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/frontends/lnbp21.ko:
+kernel/drivers/media/dvb/frontends/tda10086.ko:
+kernel/drivers/media/dvb/frontends/tda826x.ko:
+kernel/drivers/media/dvb/frontends/dib0070.ko:
+kernel/drivers/media/dvb/frontends/dib0090.ko:
+kernel/drivers/media/dvb/frontends/s5h1409.ko:
+kernel/drivers/media/dvb/frontends/tda10048.ko:
+kernel/drivers/media/dvb/frontends/s5h1411.ko:
+kernel/drivers/media/dvb/frontends/lgs8gxx.ko:
+kernel/drivers/media/dvb/frontends/atbm8830.ko:
+kernel/drivers/media/dvb/frontends/af9013.ko:
+kernel/drivers/media/dvb/frontends/cx24116.ko:
+kernel/drivers/media/dvb/frontends/si21xx.ko:
+kernel/drivers/media/dvb/frontends/stv0288.ko:
+kernel/drivers/media/dvb/frontends/stb6000.ko:
+kernel/drivers/media/dvb/frontends/stv6110.ko:
+kernel/drivers/media/dvb/frontends/stv0900.ko:
+kernel/drivers/media/dvb/frontends/ec100.ko:
+kernel/drivers/media/dvb/frontends/ds3000.ko:
+kernel/drivers/media/dvb/ttusb-dec/ttusb_dec.ko: kernel/drivers/media/dvb/dvb-core/dvb-core.ko kernel/drivers/media/dvb/ttusb-dec/ttusbdecfe.ko
+kernel/drivers/media/dvb/ttusb-dec/ttusbdecfe.ko:
+kernel/drivers/media/dvb/ttusb-budget/dvb-ttusb-budget.ko: kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko: kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-vp7045.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-vp702x.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-gp8psk.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-dtt200u.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-dibusb-common.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko kernel/drivers/media/dvb/frontends/dib3000mc.ko kernel/drivers/media/dvb/frontends/dibx000_common.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-a800.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb-dibusb-common.ko kernel/drivers/media/dvb/frontends/dib3000mc.ko kernel/drivers/media/dvb/frontends/dibx000_common.ko kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-dibusb-mb.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb-dibusb-common.ko kernel/drivers/media/dvb/frontends/dib3000mc.ko kernel/drivers/media/dvb/frontends/dibx000_common.ko kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-dibusb-mc.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb-dibusb-common.ko kernel/drivers/media/dvb/frontends/dib3000mc.ko kernel/drivers/media/dvb/frontends/dibx000_common.ko kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-nova-t-usb2.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb-dibusb-common.ko kernel/drivers/media/dvb/frontends/dib3000mc.ko kernel/drivers/media/dvb/frontends/dibx000_common.ko kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-umt-010.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb-dibusb-common.ko kernel/drivers/media/dvb/frontends/dib3000mc.ko kernel/drivers/media/dvb/frontends/dibx000_common.ko kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-m920x.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-gl861.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-au6610.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-digitv.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-cxusb.ko: kernel/drivers/media/dvb/frontends/dib7000p.ko kernel/drivers/media/dvb/frontends/dibx000_common.ko kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko kernel/drivers/media/dvb/frontends/dib0070.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-ttusb2.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-dib0700.ko: kernel/drivers/media/dvb/frontends/dib7000p.ko kernel/drivers/media/dvb/frontends/dib0090.ko kernel/drivers/media/dvb/frontends/dib7000m.ko kernel/drivers/media/dvb/frontends/dib0070.ko kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/frontends/dib8000.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko kernel/drivers/media/dvb/frontends/dib3000mc.ko kernel/drivers/media/dvb/frontends/dibx000_common.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-opera.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-af9005.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-af9005-remote.ko:
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-anysee.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-dw2102.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-dtv5100.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-af9015.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-cinergyT2.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-ce6230.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-friio.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-ec168.ko: kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/dvb-usb/dvb-usb-az6027.ko: kernel/drivers/media/dvb/frontends/stb6100.ko kernel/drivers/media/dvb/frontends/stb0899.ko kernel/drivers/media/dvb/dvb-usb/dvb-usb.ko kernel/drivers/media/dvb/dvb-core/dvb-core.ko
+kernel/drivers/media/dvb/siano/smsmdtv.ko:
+kernel/drivers/media/dvb/siano/smsdvb.ko: kernel/drivers/media/dvb/dvb-core/dvb-core.ko kernel/drivers/media/dvb/siano/smsmdtv.ko
+kernel/drivers/media/dvb/siano/smsusb.ko: kernel/drivers/media/dvb/siano/smsmdtv.ko
+kernel/drivers/md/linear.ko: kernel/drivers/md/md-mod.ko
+kernel/drivers/md/raid0.ko: kernel/drivers/md/md-mod.ko
+kernel/drivers/md/raid1.ko: kernel/drivers/md/md-mod.ko
+kernel/drivers/md/raid10.ko: kernel/drivers/md/md-mod.ko
+kernel/drivers/md/raid6_pq.ko:
+kernel/drivers/md/raid456.ko: kernel/drivers/md/md-mod.ko kernel/crypto/async_tx/async_raid6_recov.ko kernel/crypto/async_tx/async_pq.ko kernel/drivers/md/raid6_pq.ko kernel/crypto/async_tx/async_xor.ko kernel/crypto/xor.ko kernel/crypto/async_tx/async_memcpy.ko kernel/crypto/async_tx/async_tx.ko
+kernel/drivers/md/md-mod.ko:
+kernel/drivers/md/dm-mod.ko:
+kernel/drivers/md/dm-crypt.ko: kernel/drivers/md/dm-mod.ko
+kernel/drivers/md/dm-multipath.ko: kernel/drivers/md/dm-mod.ko
+kernel/drivers/md/dm-round-robin.ko: kernel/drivers/md/dm-multipath.ko kernel/drivers/md/dm-mod.ko
+kernel/drivers/md/dm-queue-length.ko: kernel/drivers/md/dm-multipath.ko kernel/drivers/md/dm-mod.ko
+kernel/drivers/md/dm-service-time.ko: kernel/drivers/md/dm-multipath.ko kernel/drivers/md/dm-mod.ko
+kernel/drivers/md/dm-snapshot.ko: kernel/drivers/md/dm-mod.ko
+kernel/drivers/md/dm-mirror.ko: kernel/drivers/md/dm-region-hash.ko kernel/drivers/md/dm-log.ko kernel/drivers/md/dm-mod.ko
+kernel/drivers/md/dm-log.ko: kernel/drivers/md/dm-mod.ko
+kernel/drivers/md/dm-region-hash.ko: kernel/drivers/md/dm-log.ko kernel/drivers/md/dm-mod.ko
+kernel/drivers/md/dm-zero.ko: kernel/drivers/md/dm-mod.ko
+kernel/drivers/staging/usbip/usbip_common_mod.ko:
+kernel/drivers/staging/usbip/vhci-hcd.ko: kernel/drivers/staging/usbip/usbip_common_mod.ko
+kernel/drivers/staging/usbip/usbip.ko: kernel/drivers/staging/usbip/usbip_common_mod.ko
+kernel/drivers/staging/winbond/w35und.ko: kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/staging/wlan-ng/prism2_usb.ko:
+kernel/drivers/staging/otus/arusb_lnx.ko:
+kernel/drivers/staging/rt2870/rt2870sta.ko:
+kernel/drivers/staging/udlfb/udlfb.ko: kernel/drivers/video/sysimgblt.ko kernel/drivers/video/sysfillrect.ko kernel/drivers/video/syscopyarea.ko
+kernel/drivers/ata/libata.ko:
+kernel/drivers/ata/sata_mv.ko: kernel/drivers/ata/libata.ko
+kernel/drivers/usb/gadget/g_zero.ko: kernel/arch/arm/plat-armada/mv_drivers_lsp/mv_udc/mv_udc.ko
+kernel/drivers/usb/gadget/g_ether.ko: kernel/arch/arm/plat-armada/mv_drivers_lsp/mv_udc/mv_udc.ko
+kernel/drivers/usb/gadget/g_file_storage.ko: kernel/arch/arm/plat-armada/mv_drivers_lsp/mv_udc/mv_udc.ko
+kernel/drivers/power/power_supply.ko:
+kernel/drivers/hwmon/hwmon.ko:
+kernel/drivers/bluetooth/hci_vhci.ko: kernel/net/bluetooth/bluetooth.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/bluetooth/hci_uart.ko: kernel/net/bluetooth/bluetooth.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/bluetooth/bcm203x.ko:
+kernel/drivers/bluetooth/bpa10x.ko: kernel/net/bluetooth/bluetooth.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/bluetooth/bfusb.ko: kernel/net/bluetooth/bluetooth.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/bluetooth/btusb.ko: kernel/net/bluetooth/bluetooth.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/bluetooth/btsdio.ko: kernel/net/bluetooth/bluetooth.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/bluetooth/ath3k.ko:
+kernel/drivers/bluetooth/btmrvl.ko: kernel/net/bluetooth/bluetooth.ko kernel/net/rfkill/rfkill.ko
+kernel/drivers/bluetooth/btmrvl_sdio.ko: kernel/drivers/bluetooth/btmrvl.ko kernel/net/bluetooth/bluetooth.ko kernel/net/rfkill/rfkill.ko
+kernel/sound/core/seq/snd-seq-midi.ko: kernel/sound/core/snd-rawmidi.ko
+kernel/sound/core/snd-hwdep.ko:
+kernel/sound/core/snd-rawmidi.ko:
+kernel/sound/usb/misc/snd-ua101.ko: kernel/sound/usb/snd-usbmidi-lib.ko kernel/sound/core/snd-rawmidi.ko
+kernel/sound/usb/caiaq/snd-usb-caiaq.ko: kernel/sound/core/snd-rawmidi.ko
+kernel/sound/usb/snd-usb-audio.ko: kernel/sound/core/snd-hwdep.ko kernel/sound/usb/snd-usbmidi-lib.ko kernel/sound/core/snd-rawmidi.ko
+kernel/sound/usb/snd-usbmidi-lib.ko: kernel/sound/core/snd-rawmidi.ko
+kernel/net/core/pktgen.ko:
+kernel/net/netfilter/nfnetlink_queue.ko:
+kernel/net/netfilter/nfnetlink_log.ko:
+kernel/net/netfilter/nf_conntrack_proto_dccp.ko:
+kernel/net/netfilter/nf_conntrack_proto_gre.ko:
+kernel/net/netfilter/nf_conntrack_proto_sctp.ko:
+kernel/net/netfilter/nf_conntrack_proto_udplite.ko:
+kernel/net/netfilter/nf_conntrack_amanda.ko:
+kernel/net/netfilter/nf_conntrack_h323.ko:
+kernel/net/netfilter/nf_conntrack_pptp.ko: kernel/net/netfilter/nf_conntrack_proto_gre.ko
+kernel/net/netfilter/nf_conntrack_sane.ko:
+kernel/net/netfilter/nf_tproxy_core.ko:
+kernel/net/netfilter/xt_mark.ko:
+kernel/net/netfilter/xt_connmark.ko:
+kernel/net/netfilter/xt_CLASSIFY.ko:
+kernel/net/netfilter/xt_DSCP.ko:
+kernel/net/netfilter/xt_HL.ko:
+kernel/net/netfilter/xt_LED.ko:
+kernel/net/netfilter/xt_NFLOG.ko: kernel/net/netfilter/nfnetlink_log.ko
+kernel/net/netfilter/xt_NFQUEUE.ko:
+kernel/net/netfilter/xt_RATEEST.ko:
+kernel/net/netfilter/xt_TPROXY.ko: kernel/net/netfilter/nf_tproxy_core.ko
+kernel/net/netfilter/xt_TCPMSS.ko:
+kernel/net/netfilter/xt_TCPOPTSTRIP.ko:
+kernel/net/netfilter/xt_TEE.ko:
+kernel/net/netfilter/xt_cluster.ko:
+kernel/net/netfilter/xt_comment.ko:
+kernel/net/netfilter/xt_connbytes.ko:
+kernel/net/netfilter/xt_connlimit.ko:
+kernel/net/netfilter/xt_conntrack.ko:
+kernel/net/netfilter/xt_dccp.ko:
+kernel/net/netfilter/xt_dscp.ko:
+kernel/net/netfilter/xt_esp.ko:
+kernel/net/netfilter/xt_hashlimit.ko:
+kernel/net/netfilter/xt_helper.ko:
+kernel/net/netfilter/xt_hl.ko:
+kernel/net/netfilter/xt_iprange.ko:
+kernel/net/netfilter/xt_length.ko:
+kernel/net/netfilter/xt_limit.ko:
+kernel/net/netfilter/xt_mac.ko:
+kernel/net/netfilter/xt_multiport.ko:
+kernel/net/netfilter/xt_osf.ko:
+kernel/net/netfilter/xt_owner.ko:
+kernel/net/netfilter/xt_physdev.ko:
+kernel/net/netfilter/xt_pkttype.ko:
+kernel/net/netfilter/xt_policy.ko:
+kernel/net/netfilter/xt_quota.ko:
+kernel/net/netfilter/xt_rateest.ko: kernel/net/netfilter/xt_RATEEST.ko
+kernel/net/netfilter/xt_realm.ko:
+kernel/net/netfilter/xt_recent.ko:
+kernel/net/netfilter/xt_sctp.ko:
+kernel/net/netfilter/xt_socket.ko: kernel/net/netfilter/nf_tproxy_core.ko
+kernel/net/netfilter/xt_state.ko:
+kernel/net/netfilter/xt_statistic.ko:
+kernel/net/netfilter/xt_string.ko:
+kernel/net/netfilter/xt_tcpmss.ko:
+kernel/net/netfilter/xt_time.ko:
+kernel/net/netfilter/xt_u32.ko:
+kernel/net/ipv4/netfilter/nf_nat_amanda.ko: kernel/net/netfilter/nf_conntrack_amanda.ko
+kernel/net/ipv4/netfilter/nf_nat_h323.ko: kernel/net/netfilter/nf_conntrack_h323.ko
+kernel/net/ipv4/netfilter/nf_nat_pptp.ko: kernel/net/netfilter/nf_conntrack_pptp.ko kernel/net/netfilter/nf_conntrack_proto_gre.ko kernel/net/ipv4/netfilter/nf_nat_proto_gre.ko
+kernel/net/ipv4/netfilter/nf_nat_snmp_basic.ko:
+kernel/net/ipv4/netfilter/nf_nat_proto_dccp.ko:
+kernel/net/ipv4/netfilter/nf_nat_proto_gre.ko:
+kernel/net/ipv4/netfilter/nf_nat_proto_udplite.ko:
+kernel/net/ipv4/netfilter/nf_nat_proto_sctp.ko:
+kernel/net/ipv4/netfilter/iptable_raw.ko:
+kernel/net/ipv4/netfilter/ipt_addrtype.ko:
+kernel/net/ipv4/netfilter/ipt_ah.ko:
+kernel/net/ipv4/netfilter/ipt_ecn.ko:
+kernel/net/ipv4/netfilter/ipt_CLUSTERIP.ko:
+kernel/net/ipv4/netfilter/ipt_ECN.ko:
+kernel/net/ipv4/netfilter/arp_tables.ko:
+kernel/net/ipv4/netfilter/arpt_mangle.ko:
+kernel/net/ipv4/netfilter/arptable_filter.ko: kernel/net/ipv4/netfilter/arp_tables.ko
+kernel/net/ipv4/netfilter/ip_queue.ko:
+kernel/net/ipv4/ipip.ko:
+kernel/net/ipv4/ip_gre.ko:
+kernel/net/ipv4/tcp_bic.ko:
+kernel/net/ipv4/tcp_westwood.ko:
+kernel/net/ipv4/tcp_htcp.ko:
+kernel/net/ipv6/netfilter/ip6_queue.ko:
+kernel/net/ipv6/netfilter/ip6t_ah.ko:
+kernel/net/ipv6/netfilter/ip6t_eui64.ko:
+kernel/net/ipv6/netfilter/ip6t_frag.ko:
+kernel/net/ipv6/netfilter/ip6t_ipv6header.ko:
+kernel/net/ipv6/netfilter/ip6t_mh.ko:
+kernel/net/ipv6/netfilter/ip6t_hbh.ko:
+kernel/net/ipv6/netfilter/ip6t_rt.ko:
+kernel/net/ipv6/netfilter/ip6t_LOG.ko:
+kernel/net/ipv6/ip6_tunnel.ko:
+kernel/net/bridge/netfilter/ebtables.ko:
+kernel/net/bridge/netfilter/ebtable_broute.ko: kernel/net/bridge/netfilter/ebtables.ko
+kernel/net/bridge/netfilter/ebtable_filter.ko: kernel/net/bridge/netfilter/ebtables.ko
+kernel/net/bridge/netfilter/ebtable_nat.ko: kernel/net/bridge/netfilter/ebtables.ko
+kernel/net/bridge/netfilter/ebt_802_3.ko:
+kernel/net/bridge/netfilter/ebt_among.ko:
+kernel/net/bridge/netfilter/ebt_arp.ko:
+kernel/net/bridge/netfilter/ebt_ip.ko:
+kernel/net/bridge/netfilter/ebt_ip6.ko:
+kernel/net/bridge/netfilter/ebt_limit.ko:
+kernel/net/bridge/netfilter/ebt_mark_m.ko:
+kernel/net/bridge/netfilter/ebt_pkttype.ko:
+kernel/net/bridge/netfilter/ebt_stp.ko:
+kernel/net/bridge/netfilter/ebt_vlan.ko:
+kernel/net/bridge/netfilter/ebt_arpreply.ko:
+kernel/net/bridge/netfilter/ebt_mark.ko:
+kernel/net/bridge/netfilter/ebt_dnat.ko:
+kernel/net/bridge/netfilter/ebt_redirect.ko:
+kernel/net/bridge/netfilter/ebt_snat.ko:
+kernel/net/bridge/netfilter/ebt_log.ko:
+kernel/net/bridge/netfilter/ebt_ulog.ko:
+kernel/net/bridge/netfilter/ebt_nflog.ko:
+kernel/net/wireless/cfg80211.ko: kernel/net/rfkill/rfkill.ko
+kernel/net/wireless/lib80211.ko:
+kernel/net/wireless/lib80211_crypt_wep.ko: kernel/net/wireless/lib80211.ko
+kernel/net/wireless/lib80211_crypt_ccmp.ko: kernel/net/wireless/lib80211.ko
+kernel/net/wireless/lib80211_crypt_tkip.ko: kernel/net/wireless/lib80211.ko
+kernel/net/key/af_key.ko:
+kernel/net/bluetooth/bluetooth.ko: kernel/net/rfkill/rfkill.ko
+kernel/net/bluetooth/l2cap.ko: kernel/net/bluetooth/bluetooth.ko kernel/net/rfkill/rfkill.ko
+kernel/net/bluetooth/sco.ko: kernel/net/bluetooth/bluetooth.ko kernel/net/rfkill/rfkill.ko
+kernel/net/bluetooth/rfcomm/rfcomm.ko: kernel/net/bluetooth/l2cap.ko kernel/net/bluetooth/bluetooth.ko kernel/net/rfkill/rfkill.ko
+kernel/net/bluetooth/bnep/bnep.ko: kernel/net/bluetooth/l2cap.ko kernel/net/bluetooth/bluetooth.ko kernel/net/rfkill/rfkill.ko
+kernel/net/bluetooth/hidp/hidp.ko: kernel/net/bluetooth/l2cap.ko kernel/net/bluetooth/bluetooth.ko kernel/net/rfkill/rfkill.ko
+kernel/net/sunrpc/sunrpc.ko:
+kernel/net/sunrpc/auth_gss/auth_rpcgss.ko: kernel/net/sunrpc/sunrpc.ko
+kernel/net/sunrpc/auth_gss/rpcsec_gss_krb5.ko: kernel/net/sunrpc/auth_gss/auth_rpcgss.ko kernel/net/sunrpc/sunrpc.ko
+kernel/net/l2tp/l2tp_core.ko:
+kernel/net/l2tp/l2tp_ppp.ko: kernel/drivers/net/pppox.ko kernel/drivers/net/ppp_generic.ko kernel/drivers/net/slhc.ko kernel/net/l2tp/l2tp_netlink.ko kernel/net/l2tp/l2tp_core.ko
+kernel/net/l2tp/l2tp_ip.ko: kernel/net/l2tp/l2tp_core.ko
+kernel/net/l2tp/l2tp_netlink.ko: kernel/net/l2tp/l2tp_core.ko
+kernel/net/l2tp/l2tp_eth.ko: kernel/net/l2tp/l2tp_netlink.ko kernel/net/l2tp/l2tp_core.ko
+kernel/net/sctp/sctp.ko:
+kernel/net/mac80211/mac80211.ko: kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
+kernel/net/rfkill/rfkill.ko:
+kernel/lib/crc-itu-t.ko:
+kernel/lib/ts_kmp.ko:
+kernel/lib/ts_bm.ko:
+kernel/lib/ts_fsm.ko:
+kernel/arch/arm/plat-armada/mv_drivers_lsp/mv_udc/mv_udc.ko:
+kernel/net/wireless/ap8x.ko:

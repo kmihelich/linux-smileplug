@@ -1,0 +1,5 @@
+This target moves connection processing to NFP.
+.br
+It can only be used in the
+.BR FORWARD
+chain.

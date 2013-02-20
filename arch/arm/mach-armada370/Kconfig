@@ -1,0 +1,33 @@
+if ARCH_ARMADA370
+
+menu "Marvell Armada-370 Options"
+
+config ARMADA_370
+	bool "Armada-370 SoC Family"
+	default y
+
+choice
+	prompt "Armada XP Chip revision"
+	depends on ARMADA_370
+	default KW40_REV_A0
+
+config  KW40_REV_A0
+	bool "MV88F6710 A0 SoC devices"
+#	select ARMADA_XP_DEEP_IDLE_UNMASK_INTS_WA
+	select SHEEVA_ERRATA_ARM_CPU_5114 if (CPU_V6)
+	select SHEEVA_ERRATA_ARM_CPU_4742
+	select SHEEVA_ERRATA_ARM_CPU_4659
+	select SHEEVA_ERRATA_ARM_CPU_4611
+	---help---
+	Choosing this option will generate a linux kernel for the
+	  MV88F6710 (KW40) devices with revision A0
+endchoice
+
+config MACH_ARMADA_370_DB
+	bool "Marvell Armada 370 Development Board"	
+	default y
+	help
+
+endmenu
+
+endif

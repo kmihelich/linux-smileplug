@@ -1,0 +1,1 @@
+PATH="/home/leming/smile/armv7-marvell-linux-gnueabi-softfp/bin:$PATH" make ARCH=arm CROSS_COMPILE=arm-marvell-linux-gnueabi- uImage -j8
